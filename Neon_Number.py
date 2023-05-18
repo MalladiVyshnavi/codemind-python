@@ -1,11 +1,13 @@
-n=int(input())
-su=0
-s=n*n
-while s>0:
-    rem=s%10
-    su=su+rem
-    s=s//10
-if n==su:
-    print('Neon Number')
-else:
-    print('Not Neon Number')
+def neon_number(s):
+    n=s*s
+    su=0
+    while n>0:
+        rem=n%10
+        su=su+rem
+        n=n//10
+    if su==s:
+        return 'Neon Number'
+    else:
+        return 'Not Neon Number'
+s=int(input())
+print(neon_number(s))
