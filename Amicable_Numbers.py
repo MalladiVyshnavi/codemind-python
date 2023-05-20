@@ -16,4 +16,3 @@ if are_amicable(num1,num2):
     print("Amicable")
 else:
     print("Not Amicable")
-    
